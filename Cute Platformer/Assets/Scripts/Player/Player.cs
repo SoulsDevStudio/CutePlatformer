@@ -7,8 +7,12 @@ public class Player : MonoBehaviour
     Rigidbody2D rig;
 
     public Animator anim;
+    public Transform groundCheck;
+
+    public bool isJumping;
 
     public float speed;
+    public float jumpForce;
 
     void Start()
     {
@@ -18,11 +22,12 @@ public class Player : MonoBehaviour
     void Update()
     {
         
+        Jump();
     }
 
     void FixedUpdate()
     {
-        Move();   
+        Move();
     }
 
     void Move()
@@ -34,21 +39,44 @@ public class Player : MonoBehaviour
 
         if (xInput > 0)
         {
-            anim.SetInteger("Transition", 1);
+            if (isJumping)
+            {
+                anim.SetInteger("Transition", 1);
+            }
+            
             
             transform.eulerAngles = new Vector2(0, 0);
         }
         
         if(xInput < 0)
         {
-            anim.SetInteger("Transition", 1);
+            if (isJumping)
+            {
+                anim.SetInteger("Transition", 1);
+            }
 
             transform.eulerAngles = new Vector2(0, 180);
         }
 
         if(xInput == 0)
         {
-            anim.SetInteger("Transition", 0);
+            if (isJumping)
+            {
+                anim.SetInteger("Transition", 0);
+            }
+            
         }
     }
+
+    void Jump()
+    {
+        isJumping = GetComponentInChildren<GroundCheck>().IsJumping;
+        if (Input.GetButtonDown("Jump") && isJumping)
+        {
+            anim.SetInteger("Transition",2);
+            rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            isJumping = false;
+        }
+    }
+
 }
