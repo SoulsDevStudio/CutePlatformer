@@ -93,7 +93,7 @@ public class Player : MonoBehaviour
 
     IEnumerator OnAttack()
     {
-        yield return new WaitForSeconds(0.83f);
+        yield return new WaitForSeconds(0.53f);
         isAttack = false;
     }
 

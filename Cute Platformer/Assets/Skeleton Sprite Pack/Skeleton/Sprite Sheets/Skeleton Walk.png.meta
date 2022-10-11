@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e5625fd3fa090bd4ca1b5a742dc3b0bc
+guid: 71854b03a1796f54c931ab3f2c28a098
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -128,211 +128,274 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Meow-Knight_Attack_1_0
+      name: Skeleton Walk_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 240
-        width: 32
-        height: 22
-      alignment: 9
-      pivot: {x: 0.7508946, y: 0.36251277}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6bae5a7f2b1b516488d0d5b0f74a5412
-      internalID: 1818152187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Meow-Knight_Attack_1_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 198
-        width: 32
-        height: 22
-      alignment: 9
-      pivot: {x: 0.75191164, y: 0.36723188}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 120f392eca9bbaf48bb5786678445e96
-      internalID: 155148598
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Meow-Knight_Attack_1_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 156
-        width: 32
-        height: 22
-      alignment: 9
-      pivot: {x: 0.21680489, y: 0.360423}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6c818688f24ac35408d8d9598ac8776b
-      internalID: 97945569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Meow-Knight_Attack_1_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 130
-        width: 32
-        height: 22
-      alignment: 9
-      pivot: {x: 0.30808264, y: 0.3604223}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7c1f29965b63bd940b4f97f077b97d7a
-      internalID: -256763431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Meow-Knight_Attack_1_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 104
-        width: 32
-        height: 22
-      alignment: 9
-      pivot: {x: 0.3034017, y: 0.3502107}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 242857142abd11c40b47411d7aff6c57
-      internalID: 1810617007
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Meow-Knight_Attack_1_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 78
-        width: 32
-        height: 22
-      alignment: 9
-      pivot: {x: 0.31042308, y: 0.36042336}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58ee3db724446d743b5101a725172d4e
-      internalID: 999320918
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Meow-Knight_Attack_1_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 52
-        width: 32
-        height: 22
-      alignment: 9
-      pivot: {x: 0.27883574, y: 0.3658078}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70f33003d92238840a286cac8db8d9e8
-      internalID: -382424178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Meow-Knight_Attack_1_7
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 26
-        width: 32
-        height: 22
-      alignment: 9
-      pivot: {x: 0.24776478, y: 0.36271876}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 441d2746c4a43024ab8d5f2b3f99eda2
-      internalID: -1272291319
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Meow-Knight_Attack_1_8
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 32
-        height: 22
-      alignment: 9
-      pivot: {x: 0.2506984, y: 0.3640543}
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc8eee13e53856b4ca38552ec8172cee
-      internalID: 976631197
+      spriteID: 5185aca0d42af0d429fe840cd3742a80
+      internalID: 19655067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Meow-Knight_Attack_1_9
+      name: Skeleton Walk_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 282
-        width: 32
-        height: 22
-      alignment: 9
-      pivot: {x: 0.7449786, y: 0.3582389}
+        x: 23
+        y: 0
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d2f333073969d5439465accecd82fe7
-      internalID: 1567669373
+      spriteID: 0874de13f8bac4846a3af7977e706723
+      internalID: -352152890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Walk_2
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 0
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991c53355d0ebd94da6458ced0286b64
+      internalID: 38326612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Walk_3
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b02e0fb1a1d5054a9fa0f4ceceb16bb
+      internalID: 1032631377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Walk_4
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 0
+        width: 21
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860f4768dae9c4243b7524081697ebd5
+      internalID: 101852683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Walk_5
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 0
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd8687284973aa4587f12e58f3a8fe1
+      internalID: 256113230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Walk_6
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367d37f47ed3c1c4e8e1e3ca49935bfa
+      internalID: -256320510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Walk_7
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 0
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14a2a2d2786d9c4c9561da06db88e79
+      internalID: -2024773241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Walk_8
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f2301794107374bb7aa9ad87477b1b
+      internalID: -1121884160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Walk_9
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 0
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1fdd6c8f147db428429f19641e2c90
+      internalID: 125757737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Walk_10
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 0
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a1a1dd8fc2efd4f91bcdb4cc972928
+      internalID: -565029999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Walk_11
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 0
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cb5aa493ffe34f4ea54bedcc885d27e
+      internalID: -1179292372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Walk_12
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 0
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a64198e5b85014e9fbec58041199c6
+      internalID: -1648388517
       vertices: []
       indices: 
       edges: []
@@ -348,16 +411,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Meow-Knight_Attack_1_5: 999320918
-      Meow-Knight_Attack_1_0: 1818152187
-      Meow-Knight_Attack_1_4: 1810617007
-      Meow-Knight_Attack_1_2: 97945569
-      Meow-Knight_Attack_1_7: -1272291319
-      Meow-Knight_Attack_1_3: -256763431
-      Meow-Knight_Attack_1_6: -382424178
-      Meow-Knight_Attack_1_9: 1567669373
-      Meow-Knight_Attack_1_8: 976631197
-      Meow-Knight_Attack_1_1: 155148598
+      Skeleton Walk_11: -1179292372
+      Skeleton Walk_10: -565029999
+      Skeleton Walk_6: -256320510
+      Skeleton Walk_9: 125757737
+      Skeleton Walk_4: 101852683
+      Skeleton Walk_12: -1648388517
+      Skeleton Walk_2: 38326612
+      Skeleton Walk_3: 1032631377
+      Skeleton Walk_7: -2024773241
+      Skeleton Walk_1: -352152890
+      Skeleton Walk_8: -1121884160
+      Skeleton Walk_0: 19655067
+      Skeleton Walk_5: 256113230
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
