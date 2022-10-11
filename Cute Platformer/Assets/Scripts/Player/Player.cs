@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public Animator anim;
     public Transform groundCheck;
 
+    public bool isAttack;
     public bool isJumping;
 
     public float speed;
@@ -21,7 +22,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        
+        Attack();
         Jump();
     }
 
@@ -39,7 +40,7 @@ public class Player : MonoBehaviour
 
         if (xInput > 0)
         {
-            if (isJumping)
+            if (isJumping && !isAttack)
             {
                 anim.SetInteger("Transition", 1);
             }
@@ -50,7 +51,7 @@ public class Player : MonoBehaviour
         
         if(xInput < 0)
         {
-            if (isJumping)
+            if (isJumping && !isAttack)
             {
                 anim.SetInteger("Transition", 1);
             }
@@ -60,7 +61,7 @@ public class Player : MonoBehaviour
 
         if(xInput == 0)
         {
-            if (isJumping)
+            if (isJumping && !isAttack)
             {
                 anim.SetInteger("Transition", 0);
             }
@@ -77,6 +78,23 @@ public class Player : MonoBehaviour
             rig.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             isJumping = false;
         }
+    }
+
+    void Attack()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            isAttack = true;
+            anim.SetInteger("Transition", 3);
+
+            StartCoroutine(OnAttack());
+        }
+    }
+
+    IEnumerator OnAttack()
+    {
+        yield return new WaitForSeconds(0.83f);
+        isAttack = false;
     }
 
 }
