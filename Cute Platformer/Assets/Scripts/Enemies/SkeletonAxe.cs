@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SkeletonAxe : Enemy
 {
+    
 
     void Start()
     {
@@ -14,4 +15,5 @@ public class SkeletonAxe : Enemy
     {
         
     }
+
 }

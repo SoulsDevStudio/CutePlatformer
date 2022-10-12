@@ -6,14 +6,20 @@ public class Player : MonoBehaviour
 {
     Rigidbody2D rig;
 
+    float attackCount;
+
     public Animator anim;
     public Transform groundCheck;
+    public Transform hitPoint;
+    public LayerMask layer;
 
     public bool isAttack;
     public bool isJumping;
 
     public float speed;
     public float jumpForce;
+    public float radius;
+    public float attackCoudown;
 
     void Start()
     {
@@ -22,6 +28,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        attackCount += Time.deltaTime;
         Attack();
         Jump();
     }
@@ -82,13 +89,26 @@ public class Player : MonoBehaviour
 
     void Attack()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && attackCount >= attackCoudown)
         {
+            Collider2D hit = Physics2D.OverlapCircle(hitPoint.position, radius,layer);
+
             isAttack = true;
             anim.SetInteger("Transition", 3);
 
+            if(hit != null)
+            {
+                hit.GetComponent<SkeletonAxe>().Hit();
+            }
+            attackCount = 0;
+
             StartCoroutine(OnAttack());
         }
+    }
+
+    void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(hitPoint.position, radius);   
     }
 
     IEnumerator OnAttack()
