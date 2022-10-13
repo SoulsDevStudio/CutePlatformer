@@ -6,6 +6,8 @@ public class SkeletonAxe : Enemy
 {
     Rigidbody2D rig;
 
+    float timerCount;
+
     public float distancePointA;
     public float distancePointB;
 
@@ -16,6 +18,7 @@ public class SkeletonAxe : Enemy
     public bool isRigth;
 
     public float speedPatrolling;
+    public float timerPatrolling;
 
     void Start()
     {
