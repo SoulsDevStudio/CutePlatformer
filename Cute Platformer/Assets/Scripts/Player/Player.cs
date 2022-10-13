@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     public float jumpForce;
     public float radius;
     public float attackCoudown;
+    public float jumpCount;
 
     void Start()
     {
