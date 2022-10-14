@@ -6,20 +6,13 @@ public class Player : MonoBehaviour
 {
     Rigidbody2D rig;
 
-    float attackCount;
-
     public Animator anim;
     public Transform groundCheck;
-    public Transform hitPoint;
-    public LayerMask layer;
 
-    public bool isAttack;
     public bool isJumping;
 
     public float speed;
     public float jumpForce;
-    public float radius;
-    public float attackCoudown;
     public float jumpCount;
 
     void Start()
@@ -29,8 +22,6 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        attackCount += Time.deltaTime;
-        Attack();
         Jump();
     }
 
@@ -48,7 +39,7 @@ public class Player : MonoBehaviour
 
         if (xInput > 0)
         {
-            if (isJumping && !isAttack)
+            if (isJumping)
             {
                 anim.SetInteger("Transition", 1);
             }
@@ -59,7 +50,7 @@ public class Player : MonoBehaviour
         
         if(xInput < 0)
         {
-            if (isJumping && !isAttack)
+            if (isJumping)
             {
                 anim.SetInteger("Transition", 1);
             }
@@ -69,7 +60,7 @@ public class Player : MonoBehaviour
 
         if(xInput == 0)
         {
-            if (isJumping && !isAttack)
+            if (isJumping)
             {
                 anim.SetInteger("Transition", 0);
             }
@@ -87,35 +78,4 @@ public class Player : MonoBehaviour
             isJumping = false;
         }
     }
-
-    void Attack()
-    {
-        if (Input.GetButtonDown("Fire1") && attackCount >= attackCoudown)
-        {
-            Collider2D hit = Physics2D.OverlapCircle(hitPoint.position, radius,layer);
-
-            isAttack = true;
-            anim.SetInteger("Transition", 3);
-
-            if(hit != null)
-            {
-                hit.GetComponent<SkeletonAxe>().Hit();
-            }
-            attackCount = 0;
-
-            StartCoroutine(OnAttack());
-        }
-    }
-
-    void OnDrawGizmos()
-    {
-        Gizmos.DrawWireSphere(hitPoint.position, radius);   
-    }
-
-    IEnumerator OnAttack()
-    {
-        yield return new WaitForSeconds(0.53f);
-        isAttack = false;
-    }
-
 }
